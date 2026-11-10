@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư – VietSchool Chuyển dữ liệu</title>
+  <style>
+    body { max-width: 760px; margin: 0 auto; padding: 24px 16px; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #1f2933; background: #fff; }
+    h1 { font-size: 26px; line-height: 1.3; }
+    h2 { margin-top: 32px; font-size: 19px; }
+    .muted { color: #5f6b76; }
+    hr { margin: 40px 0; border: 0; border-top: 1px solid #d9dee3; }
+  </style>
+</head>
+<body>
+  <h1>Chính sách quyền riêng tư – Tiện ích “VietSchool Chuyển dữ liệu”</h1>
+  <p class="muted">Có hiệu lực từ ngày 10/11/2026.</p>
+
+  <h2>1. Chức năng chính của extension</h2>
+  <p>Extension giúp cán bộ, giáo viên nhà trường chuyển dữ liệu học tập (điểm học kỳ, chuyên cần theo tháng) từ hệ thống quản lý trường học VietSchool sang hệ thống SMIS của Bộ Giáo dục và Đào tạo (smis.moet.gov.vn). Người dùng phải đăng nhập sẵn vào cả hai hệ thống bằng tài khoản của mình.</p>
+
+  <h2>2. Dữ liệu extension xử lý</h2>
+  <ul>
+    <li>Thông tin trường: tên trường, năm học, học kỳ, danh sách lớp.</li>
+    <li>Thông tin học sinh: họ tên, ngày sinh, mã định danh Bộ GD&amp;ĐT, lớp.</li>
+    <li>Hồ sơ học tập: điểm đánh giá thường xuyên, giữa kỳ; ngày nghỉ có phép/không phép.</li>
+  </ul>
+  <p>Dữ liệu chỉ được đọc từ VietSchool và gửi lên SMIS khi người dùng chủ động chọn lớp và bấm nộp, bằng chính phiên đăng nhập của người dùng trên hai hệ thống.</p>
+
+  <h2>3. Những gì extension KHÔNG làm</h2>
+  <ul>
+    <li>Không gửi dữ liệu về máy chủ của nhà phát triển hay bất kỳ bên thứ ba nào khác ngoài SMIS.</li>
+    <li>Không thu thập, lưu hay đọc mật khẩu đăng nhập.</li>
+    <li>Không theo dõi lịch sử duyệt web, không dùng công cụ thống kê hay quảng cáo.</li>
+    <li>Không bán, cho thuê hay chia sẻ dữ liệu; không dùng dữ liệu cho mục đích khác ngoài việc chuyển dữ liệu nêu trên, kể cả xét tín dụng hay cho vay.</li>
+  </ul>
+
+  <h2>4. Lưu trữ trên máy người dùng</h2>
+  <p>Tiện ích lưu nhật ký các lượt chuyển (thời gian, lớp, môn/tháng, kết quả, danh sách học sinh không khớp) trong bộ nhớ của trình duyệt trên chính máy người dùng (IndexedDB) để người dùng tra cứu lại. Nhật ký không được gửi đi đâu. Người dùng có thể xóa toàn bộ bằng nút “Xóa nhật ký” trong tiện ích, hoặc gỡ tiện ích. Khi người dùng xuất nhật ký để gửi bộ phận hỗ trợ, họ tên học sinh được che (chỉ giữ chữ cái đầu và năm sinh).</p>
+
+  <h2>5. Quyền trình duyệt được sử dụng</h2>
+  <ul>
+    <li><b>Truy cập trang VietSchool (*.vietschool.vn, *.truonghocviet.vn)</b>: đọc danh sách lớp và xuất dữ liệu điểm, chuyên cần.</li>
+    <li><b>Truy cập smis.moet.gov.vn</b>: mở trang nhập dữ liệu, tải file mẫu, tải lên và ghi dữ liệu.</li>
+    <li><b>scripting</b>: chạy thao tác đọc/nộp dữ liệu trên tab VietSchool hoặc tab SMIS đang mở của người dùng.</li>
+    <li><b>offscreen</b>: đọc nội dung trang SMIS ở chế độ nền.</li>
+    <li><b>sidePanel</b>: hiển thị giao diện tiện ích ở bảng bên cạnh.</li>
+  </ul>
+
+  <h2>6. Liên hệ</h2>
+  <p>Mọi thắc mắc về chính sách này, vui lòng liên hệ: email <b>tiendev0104@gmail.com</b>.</p>
+
+  <hr>
+
+  <h1>Privacy Policy – “VietSchool Chuyển dữ liệu” extension</h1>
+  <p class="muted">Effective 10 November 2026.</p>
+  <p>The extension lets school staff transfer term scores and monthly attendance from the VietSchool school-management system to the Ministry of Education's SMIS system (smis.moet.gov.vn), using their own existing sign-in on both sites.</p>
+  <p><b>Data handled:</b> school name, school year, term and class list; student name, date of birth, Ministry student ID and class; scores and attendance. Data is read from VietSchool and submitted to SMIS only when the user selects classes and starts a transfer.</p>
+  <p><b>Not done:</b> no data is sent to the developer or to any third party other than SMIS; passwords are never read or stored; no browsing history, analytics or advertising; data is never sold, shared, or used for any unrelated purpose, including creditworthiness or lending.</p>
+  <p><b>Local storage:</b> a transfer log is kept only in the user's browser (IndexedDB) and can be cleared with “Xóa nhật ký” or by removing the extension. Logs exported for support have student names masked.</p>
+  <p><b>Contact:</b>tiendev0104@gmail.com</p>
+</body>
+</html>
